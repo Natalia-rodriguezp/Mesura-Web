@@ -142,7 +142,7 @@ global styles
 */
 html,
 body {
-  background: #fff;
+  background: rgb(0, 0, 0);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -152,8 +152,8 @@ body {
 }
 
 ::-moz-selection {
-  background: #4b8ef1;
-  color: #fff !important;
+  background: #ff0000;
+  color: rgb(255, 0, 0) !important;
 }
 
 @media (max-width: 991px) {
@@ -428,7 +428,7 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #4b8ef1!important;
+  color: #ff0000!important;
 }
 
 .header-area .main-nav .nav li:last-child a.active {
