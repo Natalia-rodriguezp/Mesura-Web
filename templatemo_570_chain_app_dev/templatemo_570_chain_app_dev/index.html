@@ -31,6 +31,8 @@ https://templatemo.com/tm-570-chain-app-dev
     <link rel="stylesheet" href="assets/css/animated.css">
     <link rel="stylesheet" href="assets/css/owl.css">
 
+    <script src="./assets/js/src/main.js" type="module"></script>
+
   </head>
 
 <body>
@@ -112,7 +114,7 @@ https://templatemo.com/tm-570-chain-app-dev
 
         <!-- Username & Password Login form -->
         <div class="user_login">
-            <form>
+            <form id = "si">
                 <label>Correo / Nombre de usuario</label>
                 <input type="text" />
                 <br />
@@ -136,17 +138,17 @@ https://templatemo.com/tm-570-chain-app-dev
 
         <!-- Register Form -->
         <div class="user_register">
-            <form>
+            <form id="signup-form">
                 <label>Nombre completo</label>
                 <input type="text" />
                 <br />
 
                 <label>Direcccion E-mail</label>
-                <input type="email" />
+                <input type="email" id="signup-email" placeholder="Correo" required />
                 <br />
 
                 <label>Contraseña</label>
-                <input type="password" />
+                <input type="password" id="signup-password" placeholder="Contraseña" required />
                 <br />
 
                 <div class="checkbox">
@@ -156,7 +158,7 @@ https://templatemo.com/tm-570-chain-app-dev
 
                 <div class="action_btns">
                     <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Volver</a></div>
-                    <div class="one_half last"><a href="#" class="btn btn_red">Registrarse</a></div>
+                    <div class="one_half last"><button type="submit" class="btn btn_red">Registrarse</button></div>
                 </div>
             </form>
         </div>
@@ -476,5 +478,7 @@ https://templatemo.com/tm-570-chain-app-dev
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
+
+  
 </body>
 </html>
