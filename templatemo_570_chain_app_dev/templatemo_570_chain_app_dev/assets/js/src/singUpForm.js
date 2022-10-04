@@ -1,6 +1,9 @@
+//Imports
+
 import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
 import { auth } from "./firebase.js"; // firebase auth
 
+//Get form
 const singUpForm = document.querySelector("#signup-form");
 
 singUpForm.addEventListener("submit", async (e) => {
@@ -18,17 +21,17 @@ singUpForm.addEventListener("submit", async (e) => {
       password
     );
     console.log(userCredentials);
-  } catch (error) {
-    console.log(error.message);
-    console.log(error.code);
 
     const modal_id = document.querySelector(".popupContainer");
-    console.log(modal_id);
+    //console.log(modal_id);
     $("#lean_overlay").fadeOut(200);
 
     $(modal_id).css({
       display: "none",
     });
+  } catch (error) {
+    console.log(error.message);
+    console.log(error.code);
 
     if (error.code === "auth/invalid-email") {
       alert("Invalid email address");
