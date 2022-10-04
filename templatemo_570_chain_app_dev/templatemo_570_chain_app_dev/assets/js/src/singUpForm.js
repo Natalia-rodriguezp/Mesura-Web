@@ -18,6 +18,12 @@ singUpForm.addEventListener("submit", async (e) => {
       password
     );
     console.log(userCredentials);
+
+    const modalSign = document.querySelector('#modal')
+    console.log(modalSign);
+    const modal = bootstrap.Modal.getInstance(modalSign)
+    modal.hide()
+
   } catch (error) {
     console.log(error);
   }
