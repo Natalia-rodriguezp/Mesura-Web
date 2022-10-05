@@ -9,9 +9,11 @@ export const loginCheck = user => {
     if (user) {
         logged_in.forEach(link => link.style.display = 'none');
         logged_out.forEach(link => link.style.display = 'block');
+        console.log("Sessions logged")
     }
     else{
         logged_in.forEach(link => link.style.display = 'block');
         logged_out.forEach(link => link.style.display = 'none');
+        console.log("Sessions log out")
     }
 }

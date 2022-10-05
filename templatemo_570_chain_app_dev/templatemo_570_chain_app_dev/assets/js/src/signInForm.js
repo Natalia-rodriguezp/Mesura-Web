@@ -8,6 +8,7 @@ import { showMessage } from "./showMessage.js"; // show message
 
 //Get form
 const signInForm = document.querySelector('#signin-form');
+console.log(signInForm);
 
 signInForm.addEventListener("submit", async (e) => {
     e.preventDefault();
