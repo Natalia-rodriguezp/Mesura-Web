@@ -39,13 +39,13 @@ singUpForm.addEventListener("submit", async (e) => {
         console.log(error.code);
 
         if (error.code === "auth/invalid-email") {
-            showMessage("Invalid email address", "linear-gradient(to right, #00b09b, #96c93d)")
+            showMessage("Invalid email address", "linear-gradient(90deg, rgba(173,58,180,1) 17%, rgba(253,29,29,1) 80%)")
         } else if (error.code === "auth/weak-password") {
-            showMessage("Password is too weak")
-        } else if (error.code === "auth/email-already-in-use", "linear-gradient(to right, #00b09b, #96c93d)") {
-            showMessage("Email already in use", "linear-gradient(to right, #00b09b, #96c93d)")
+            showMessage("Password is too weak", "linear-gradient(90deg, rgba(173,58,180,1) 17%, rgba(253,29,29,1) 80%)")
+        } else if (error.code === "auth/email-already-in-use") {
+            showMessage("Email already in use", "linear-gradient(90deg, rgba(173,58,180,1) 17%, rgba(253,29,29,1) 80%)")
         } else if (error.code) {
-            showMessage("Something went wrong", "linear-gradient(to right, #00b09b, #96c93d)");
+            showMessage("Something went wrong", "linear-gradient(90deg, rgba(173,58,180,1) 17%, rgba(253,29,29,1) 80%)");
         }
     }
 });
