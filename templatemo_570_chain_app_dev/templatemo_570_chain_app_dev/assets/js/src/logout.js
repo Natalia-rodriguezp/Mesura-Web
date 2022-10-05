@@ -4,6 +4,10 @@ import { auth } from './firebase.js';
 const logout = document.querySelector('#logout');
 //console.log(logout);
 logout.addEventListener('click', async () => {
+    
     await signOut(auth)
+    
     console.log('logout clicked');
+
+    window.location.href = "./index.html";
 });
