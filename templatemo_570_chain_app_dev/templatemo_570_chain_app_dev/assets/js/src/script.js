@@ -1,6 +1,28 @@
+
+function addData(chart, label, data) {
+    chart.data.labels.push(label);
+    chart.data.datasets.forEach((dataset) => {
+        dataset.data.push(data);
+    });
+    chart.update();
+}
+
 /*
 Encierro todo en una función asíncrona para poder usar async y await cómodamente
 */
+
+
+
+function updateData() {
+    console.log("Update Data");
+    setTimeout(updateData,5000);
+  }
+
+  updateData();
+
+
+
+
 (async () => {
     // Llamar a nuestra API. Puedes usar cualquier librería para la llamada, yo uso fetch, que viene nativamente en JS
     const respuestaRaw = await fetch("./assets/js/src/json_enco.php");
@@ -28,7 +50,7 @@ Encierro todo en una función asíncrona para poder usar async y await cómodame
         borderColor: 'rgba(54, 162, 235, 1)', // Color del borde
         borderWidth: 1, // Ancho del borde
     };
-    new Chart($grafica, {
+    const mainChart = new Chart($grafica, {
         type: 'line', // Tipo de gráfica
         data: {
             labels: etiquetas,
@@ -48,4 +70,7 @@ Encierro todo en una función asíncrona para poder usar async y await cómodame
             },
         }
     });
+
+    //addData(mainChart, 'labels', );
+
 })();
