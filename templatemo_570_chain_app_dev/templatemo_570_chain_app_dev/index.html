@@ -115,13 +115,13 @@
 
         <!-- Username & Password Login form -->
         <div class="user_login">
-            <form id = "si">
+            <form id = "signin-form">
                 <label>Correo / Nombre de usuario</label>
-                <input type="text" />
+                <input type="email" id="signin-email" placeholder="Correo" required/>
                 <br />
 
                 <label>Contraseña</label>
-                <input type="password" />
+                <input type="password" id="signin-password" placeholder="Contraseña" required/>
                 <br />
 
                 <div class="checkbox">
@@ -131,7 +131,7 @@
 
                 <div class="action_btns">
                     <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Volver</a></div>
-                    <div class="one_half last"><a href="#" class="btn btn_red">Conectar</a></div>
+                    <div class="one_half last"><button type="submit" class="btn btn_red">Conectarse</button></div>
                 </div>
             </form>
 
