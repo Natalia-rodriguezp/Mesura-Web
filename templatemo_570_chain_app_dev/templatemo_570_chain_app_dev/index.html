@@ -12,21 +12,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-    <title> MESURA  </title>
+    <title> Mesura  </title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <!--
 
-TemplateMo 570 Chain App Dev
-
-https://templatemo.com/tm-570-chain-app-dev
 
 -->
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
     <link rel="stylesheet" href="assets/css/animated.css">
     <link rel="stylesheet" href="assets/css/owl.css">
@@ -57,8 +55,9 @@ https://templatemo.com/tm-570-chain-app-dev
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
-              <img src="assets/images/logo.png" alt="Chain App Dev">
+            <a href="index.html" class="logo navbar-brand">
+              <img src="assets/images/Logo.png" alt="Mesura Logo"  height="50">
+              Mesura
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
@@ -67,6 +66,8 @@ https://templatemo.com/tm-570-chain-app-dev
               <li class="scroll-to-section"><a href="#services">Servicios</a></li>
               <li class="scroll-to-section"><a href="#about">Nosotros</a></li>
               <li class="scroll-to-section"><a href="#pricing">Suscripción</a></li>
+              
+              <li><div class="gradient-button"><a href="#modal" id="logOut">Cerrar <i class="fa fa-sign-out-alt"></i> </a></div></li> 
               <li><div class="gradient-button"><a id="modal_trigger" href="#modal"><i class="fa fa-sign-in-alt"></i> Iniciar sesión </a></div></li> 
             </ul>        
             <a class='menu-trigger'>
@@ -158,7 +159,7 @@ https://templatemo.com/tm-570-chain-app-dev
 
                 <div class="action_btns">
                     <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Volver</a></div>
-                    <div class="one_half last"><button type="submit" class="btn btn_red">Registrarse</button></div>
+                    <div class="one_half last"><button id="pruebaButton" type="submit" class="btn btn_red">Registrarse</button></div>
                 </div>
             </form>
         </div>
@@ -408,7 +409,7 @@ https://templatemo.com/tm-570-chain-app-dev
 
         <div class="col-lg-12">
           <div class="copyright-text">
-            <p>Copyright © 2022 Chain App Dev Company. All Rights Reserved. 
+            <p>Copyright © 2022 Mesura App Dev Company. All Rights Reserved. 
           
           </div>
         </div>
@@ -418,6 +419,7 @@ https://templatemo.com/tm-570-chain-app-dev
 
 
   <!-- Scripts -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
