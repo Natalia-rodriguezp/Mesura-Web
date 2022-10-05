@@ -24,7 +24,7 @@ googleButton.addEventListener('click', async () => {
             display: "none",
         });
 
-        window.location.href = "./dashboard.html";
+        window.location.href = "./dashboard.php";
     } catch (error) {
         console.log(error)
     }
