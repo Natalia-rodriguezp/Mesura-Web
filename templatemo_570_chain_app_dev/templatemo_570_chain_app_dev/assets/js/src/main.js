@@ -5,6 +5,7 @@ import { auth } from './firebase.js';
 
 
 import './singUpForm.js';
+import './signInForm.js';
 import './logout.js';
 
 
