@@ -40,14 +40,12 @@ signInForm.addEventListener("submit", async (e) => {
         console.log(error.message);
         console.log(error.code);
 
-        if (error.code === "auth/invalid-email") {
-            showMessage("Invalid email address", "linear-gradient(90deg, rgba(173,58,180,1) 17%, rgba(253,29,29,1) 80%)")
-        } else if (error.code === "auth/weak-password") {
-            showMessage("Password is too weak", "linear-gradient(90deg, rgba(173,58,180,1) 17%, rgba(253,29,29,1) 80%)")
-        } else if (error.code === "auth/email-already-in-use") {
-            showMessage("Email already in use", "linear-gradient(90deg, rgba(173,58,180,1) 17%, rgba(253,29,29,1) 80%)")
+        if (error.code === "auth/wrong-password") {
+            showMessage("Contraseña incorrecta", "linear-gradient(90deg, rgba(173,58,180,1) 17%, rgba(253,29,29,1) 80%)")
+        } else if (error.code === "auth/user-not-found") {
+            showMessage("Usuario equivocado", "linear-gradient(90deg, rgba(173,58,180,1) 17%, rgba(253,29,29,1) 80%)")
         } else if (error.code) {
-            showMessage("Something went wrong", "linear-gradient(90deg, rgba(173,58,180,1) 17%, rgba(253,29,29,1) 80%)");
+            showMessage("Algo ha fallado " + error, "linear-gradient(90deg, rgba(173,58,180,1) 17%, rgba(253,29,29,1) 80%)");
         }
     }
 });
