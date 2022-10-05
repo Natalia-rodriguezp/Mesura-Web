@@ -6,6 +6,7 @@ import { auth } from './firebase.js';
 
 import './singUpForm.js';
 import './signInForm.js';
+import './googleLogin.js';
 import './logout.js';
 
 const user = auth.currentUser;
