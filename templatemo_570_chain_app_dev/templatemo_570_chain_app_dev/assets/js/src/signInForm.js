@@ -35,6 +35,8 @@ signInForm.addEventListener("submit", async (e) => {
             display: "none",
         });
 
+        window.location.href = "./dashboard.html";
+        
         
     } catch (error) {
         console.log(error.message);
