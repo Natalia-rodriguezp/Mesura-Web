@@ -12,7 +12,7 @@ $respuesta = [
 echo json_encode($respuesta);*/
 
 
-include("./db.php");
+include("./assets/js/src/db.php");
 $query = "SELECT * FROM `DataIoT`";
 $queryGSR = "SELECT GSR_Sensor FROM `DataIoT`";
 $queryTEMP = "SELECT Temp_Sensor FROM `DataIoT`";

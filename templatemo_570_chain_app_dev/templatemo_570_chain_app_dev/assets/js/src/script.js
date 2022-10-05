@@ -3,7 +3,7 @@ Encierro todo en una función asíncrona para poder usar async y await cómodame
 */
 (async () => {
     // Llamar a nuestra API. Puedes usar cualquier librería para la llamada, yo uso fetch, que viene nativamente en JS
-    const respuestaRaw = await fetch("json_enco.php");
+    const respuestaRaw = await fetch("./assets/js/src/json_enco.php");
     // Decodificar como JSON
     const respuesta = await respuestaRaw.json();
     // Ahora ya tenemos las etiquetas y datos dentro de "respuesta"
