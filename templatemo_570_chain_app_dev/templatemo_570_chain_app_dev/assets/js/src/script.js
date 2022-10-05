@@ -12,18 +12,7 @@ Encierro todo en una función asíncrona para poder usar async y await cómodame
 */
 
 
-
-function updateData() {
-    console.log("Update Data");
-    setTimeout(updateData,5000);
-  }
-
-  updateData();
-
-
-
-
-(async () => {
+async function getUpdateData() {
     // Llamar a nuestra API. Puedes usar cualquier librería para la llamada, yo uso fetch, que viene nativamente en JS
     const respuestaRaw = await fetch("./assets/js/src/json_enco.php");
     // Decodificar como JSON
@@ -50,27 +39,69 @@ function updateData() {
         borderColor: 'rgba(54, 162, 235, 1)', // Color del borde
         borderWidth: 1, // Ancho del borde
     };
-    const mainChart = new Chart($grafica, {
-        type: 'line', // Tipo de gráfica
-        data: {
-            labels: etiquetas,
-            datasets: [
-                GSR_Data,
-                Temp_Data,
-                // Aquí más datos...
-            ]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero: true
-                    }
-                }],
+    const chart = Chart.getChart("grafica");
+    if (chart)
+    {
+        console.log("Chart");
+        chart.destroy();
+        new Chart($grafica, {
+            type: 'line', // Tipo de gráfica
+            data: {
+                labels: etiquetas,
+                datasets: [
+                    GSR_Data,
+                    Temp_Data,
+                    // Aquí más datos...
+                ]
             },
-        }
-    });
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }],
+                },
+            }
+        });
+    }
+    else
+    {
+        console.log("No chart");
+        new Chart($grafica, {
+            type: 'line', // Tipo de gráfica
+            data: {
+                labels: etiquetas,
+                datasets: [
+                    GSR_Data,
+                    Temp_Data,
+                    // Aquí más datos...
+                ]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }],
+                },
+            }
+        });
+    }
+    
 
     //addData(mainChart, 'labels', );
 
-})();
+}
+//getUpdateData();
+
+function updateData() {
+    console.log("Update Data");
+    getUpdateData();
+    setTimeout(updateData,5000);
+  }
+
+  updateData();
+  
+
