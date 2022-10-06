@@ -65,17 +65,13 @@ include("./assets/js/src/db.php");
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li class="scroll-to-section"><a href="#top" class="active">Inicio</a></li>
+              <li class="scroll-to-section"><a href="./index.html" class="active">Inicio</a></li>
               <li class="scroll-to-section"><a href="#services">Gráficas</a></li>
               <li class="scroll-to-section"><a href="#about">Tablas de datos</a></li>
 
 
-              <li>
-                <div class="gradient-button" id="logged-out"><a href="#modal" id="logout">Cerrar <i class="fa fa-sign-out-alt"></i> </a></div>
-              </li>
-              <li>
-                <div class="gradient-button" id="logged-in"><a id="modal_trigger" href="#modal"><i class="fa fa-sign-in-alt"></i> Iniciar sesión </a></div>
-              </li>
+              <li class="dukenuke"><div class="gradient-button" id="logged-out"><a href="#modal"id="logout">Cerrar sesión <i class="fa fa-sign-out-alt"></i> </a></div></li> 
+              <li class="dukenuke"><div class="gradient-button" id="logged-in"><a id="modal_trigger" href="#modal"><i class="fa fa-sign-in-alt"></i> Iniciar sesión </a></div></li> 
 
             </ul>
             <a class='menu-trigger'>

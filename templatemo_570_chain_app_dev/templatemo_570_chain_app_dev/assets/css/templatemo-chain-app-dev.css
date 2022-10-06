@@ -654,7 +654,7 @@ header
 
 @media (max-width: 992px) {
   .header-area .main-nav .nav li:last-child  ,
-  .background-header .main-nav .nav li:last-child {
+  .background-header .main-nav .nav li:last-child, .dukenuke {
     color: #069;
   }
   .header-area .main-nav .nav li:nth-child(6),
@@ -1954,7 +1954,7 @@ responsive
     max-width: 25px;
     margin-left: 0px;
   }
-  .header-area .main-nav .nav li:last-child {
+  .header-area .main-nav .nav li:last-child, .dukenuke {
     padding-left: 20px;
   }
   
