@@ -32,7 +32,7 @@ async function getUpdateData() {
     };
     //window.alert("Holaaas")
     const Temp_Data = {
-        label: "Pulso_Sensor",
+        label: "Sensor_Pulso",
         // Pasar los datos igualmente desde PHP
         data: respuesta.Temp_Sensor, // <- Aquí estamos pasando el valor traído usando AJAX
         backgroundColor: 'rgba(54, 162, 235, 0.2)', // Color de fondo

@@ -1,3 +1,5 @@
+
+
 <?php
 include("./assets/js/src/db.php");
 ?>
@@ -241,7 +243,7 @@ include("./assets/js/src/db.php");
                         GSR Sensor
                       </th>
                       <th>
-                        Temperature Sensor
+                        Sensor Pulso
                       </th>
                       <th>
                         Date
