@@ -15,7 +15,7 @@ echo json_encode($respuesta);*/
 include("./assets/js/src/db.php");
 $query = "SELECT * FROM `DataIoT`";
 $queryGSR = "SELECT GSR_Sensor FROM `DataIoT`";
-$queryTEMP = "SELECT Temp_Sensor FROM `DataIoT`";
+$queryTEMP = "SELECT Pulso_Sensor FROM `DataIoT`";
 $queryDATE = "SELECT DateRead FROM `DataIoT`";
 
 $results_data = mysqli_query($conn, $query);
