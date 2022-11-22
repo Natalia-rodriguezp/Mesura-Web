@@ -1,4 +1,7 @@
 
+console.log("Holas nasmon")
+
+
 function addData(chart, label, data) {
     chart.data.labels.push(label);
     chart.data.datasets.forEach((dataset) => {
