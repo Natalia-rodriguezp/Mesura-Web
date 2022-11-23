@@ -68,8 +68,7 @@ include("./assets/js/src/db.php");
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
               <li class="scroll-to-section"><a href="./index.html" class="active">Inicio</a></li>
-              <li class="scroll-to-section"><a href="#services">Gráficas</a></li>
-              <li class="scroll-to-section"><a href="#about">Tablas de datos</a></li>
+              <li class="scroll-to-section"><a href="#services">Dashboard</a></li>
 
 
               <li class="dukenuke"><div class="gradient-button" id="logged-out"><a href="#modal"id="logout">Cerrar sesión <i class="fa fa-sign-out-alt"></i> </a></div></li> 
@@ -205,106 +204,7 @@ include("./assets/js/src/db.php");
         </div>
       </div>
     </div>
-  </div>
-
-  <div id="services" class="services section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-            <h4>Gráficas Mesura </h4>
-            <img src="assets/images/heading-line-dec.png" alt="">
-            <p> En esta sección te presentaremos los datos recopilados de los sensores.
-            <p>
-
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.js" integrity="sha512-d6nObkPJgV791iTGuBoVC9Aa2iecqzJRE0Jiqvk85BhLHAPhWqkuBiQb1xz2jvuHNqHLYoN3ymPfpiB1o+Zgpw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-              <canvas id="grafica"></canvas>
-              <script type="text/javascript" src="./assets/js/src/script.js"></script>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="about" class="about-us section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 align-self-center">
-            <div class="section-heading">
-              <h4>Tablas de <em> datos </em> Mesura </h4>
-              <img src="assets/images/heading-line-dec.png" alt="">
-              <p> A continuación podrás visualizar tus datos organizados y listos para exportar en formato csv.</p>
-              <div class="col-md-8">
-                <table class="table table-bordered">
-                  <thead>
-                    <tr>
-                      <th>
-                        GSR Sensor
-                      </th>
-                      <th>
-                        Sensor Pulso
-                      </th>
-                      <th>
-                        Date
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <?php
-
-
-
-                    $query = "SELECT * FROM `DataIoT`";
-                    $results_data = mysqli_query($conn, $query);
-
-                    while ($row = mysqli_fetch_array($results_data)) { ?>
-
-                      <tr>
-                        <td><?php echo $row['GSR_Sensor'] ?></td>
-                        <td><?php echo $row['Temp_Sensor'] ?></td>
-                        <td><?php echo $row['DateRead'] ?></td>
-                      </tr>
-
-
-                    <?php    }
-                    ?>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="right-image">
-          <img src="assets/images/datos.png" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-
-
-  <div id="pricing" class="pricing-tables">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-          <div class="section-heading">
-            <h4>Gracias por ser parte de Mesura </h4>
-            <img src="assets/images/heading-line-dec.png" alt="">
-
-
-            <div class="col-lg-12">
-              <div class="copyright-text">
-                <p>Copyright © 2022 Mesura App Dev Company. All Rights Reserved.
-
-              </div>
-            </div>
-          </div>
-        </div>
-        </footer>
+  </div>     
 
 
         <!-- Scripts -->
@@ -316,6 +216,7 @@ include("./assets/js/src/db.php");
         <script src="assets/js/imagesloaded.js"></script>
         <script src="assets/js/popup.js"></script>
         <script src="assets/js/custom.js"></script>
+        
 
 
 </body>
