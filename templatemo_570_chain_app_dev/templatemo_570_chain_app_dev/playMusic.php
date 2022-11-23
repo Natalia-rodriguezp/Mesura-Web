@@ -66,7 +66,7 @@ include("./assets/js/src/db.php");
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
               <li class="scroll-to-section"><a href="./index.html" class="active">Inicio</a></li>
-              <li class="scroll-to-section"><a href="#services">Dashboard</a></li>
+              <li class="scroll-to-section"><a href="./dashboard.php">Dashboard</a></li>
 
 
               <li class="dukenuke">
@@ -188,37 +188,29 @@ include("./assets/js/src/db.php");
                     <div>
                       <div class="pricing-item-regular row">
                         <div class="col-lg-6">
-                          <span class="price">$8.000</span>
-                          <h4>Premium para Estudiantes</h4>
                           <div class="icon">
-                            <img src="assets/images/pricing-table-01.png" alt="">
-                          </div>
-                          <ul>
-                            <li>- Descuento especial para estudiantes universitarios.</li>
-                            <li>- Escucha música sin anuncios</li>
-                            <li>- Reproduce y descarga tus canciones en cualquier lugar, incluso sin conexión</li>
-                            <li>- Prepaga o suscríbete </li>
-                          </ul>
-                          <div class="border-button">
-                            <a href="#">PRUEBA 1 MES GRATIS</a>
+                            <img src="assets/images/Capital-Cities-Safe-and-Sound.jpg" alt="">
                           </div>
                         </div>
                         <div class="col-lg-6">
-                          <span class="price">$9.000</span>
-                          <h4>Premium para Estudiantes</h4>
-                          <div class="icon">
-                            <img src="assets/images/pricing-table-01.png" alt="">
-                          </div>
+                          <h4>Capital Cities - Safe And Sound</h4>
                           <ul>
-                            <li>- Descuento especial para estudiantes universitarios.</li>
-                            <li>- Escucha música sin anuncios</li>
-                            <li>- Reproduce y descarga tus canciones en cualquier lugar, incluso sin conexión</li>
-                            <li>- Prepaga o suscríbete </li>
+                            <li>- Consejos bonitos.</li>
+                            <li>- Palabras bonitas</li>
+                            <li>- Cositas para calmar a los usuarios</li>
+                            <li>- Aqui ocurre la magia </li>
                           </ul>
                           <div class="border-button">
-                            <a href="#">PRUEBA 1 MES GRATIS</a>
+                            <a href="#">Me gusta</a>
+                          </div>
+                          <div class="border-button">
+                            <a href="#">No me gusta</a>
                           </div>
                         </div>
+                        <audio controls autoplay style=" padding-top: 30px; z-index: 1; " >
+                        <source src="basic.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                      </audio>
                       </div>
                     </div>
                   </div>

@@ -1383,9 +1383,8 @@ The Clients
 }
 
 .pricing-item-regular .icon img {
-  width: 120px;
-  height: 106px;
-  margin-bottom: 30px;
+  width: 370px;
+  height: 350px;
 }
 
 .pricing-item-regular ul li {
@@ -1460,8 +1459,8 @@ The Clients
 }
 
 .pricing-item-pro .icon img {
-  width: 120px;
-  height: 106px;
+  width: 500px;
+  height: 500px;
   margin-bottom: 30px;
 }
 
