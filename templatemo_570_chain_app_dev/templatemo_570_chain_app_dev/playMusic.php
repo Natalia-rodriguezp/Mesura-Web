@@ -1,5 +1,3 @@
-
-
 <?php
 include("./assets/js/src/db.php");
 ?>
@@ -30,7 +28,7 @@ include("./assets/js/src/db.php");
   <!-- Additional CSS Files -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-  <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
+  <link rel="stylesheet" href="assets/css/playMusic.css">
   <link rel="stylesheet" href="assets/css/animated.css">
   <link rel="stylesheet" href="assets/css/owl.css">
 
@@ -71,8 +69,12 @@ include("./assets/js/src/db.php");
               <li class="scroll-to-section"><a href="#services">Dashboard</a></li>
 
 
-              <li class="dukenuke"><div class="gradient-button" id="logged-out"><a href="#modal"id="logout">Cerrar sesión <i class="fa fa-sign-out-alt"></i> </a></div></li> 
-              <li class="dukenuke"><div class="gradient-button" id="logged-in"><a id="modal_trigger" href="#modal"><i class="fa fa-sign-in-alt"></i> Iniciar sesión </a></div></li> 
+              <li class="dukenuke">
+                <div class="gradient-button" id="logged-out"><a href="#modal" id="logout">Cerrar sesión <i class="fa fa-sign-out-alt"></i> </a></div>
+              </li>
+              <li class="dukenuke">
+                <div class="gradient-button" id="logged-in"><a id="modal_trigger" href="#modal"><i class="fa fa-sign-in-alt"></i> Iniciar sesión </a></div>
+              </li>
 
             </ul>
             <a class='menu-trigger'>
@@ -176,47 +178,70 @@ include("./assets/js/src/db.php");
 
   <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
     <div class="container">
-      <div class="row">
+      <div>
         <div class="col-lg-12">
-          <div class="row">
-            <div class="col-lg-6 align-self-center">
+          <div>
+            <div>
               <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <div class="row">
                   <div class="col-lg-12">
-                    <h2> Visualiza tus datos</h2>
-                    <p>En esta sección podrás observar los datos leídos por los sensores implementados,
-                      para que lleves un registro de tu actividad.</p>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="white-button scroll-to-section">
-
+                    <div>
+                      <div class="pricing-item-regular row">
+                        <div class="col-lg-6">
+                          <span class="price">$8.000</span>
+                          <h4>Premium para Estudiantes</h4>
+                          <div class="icon">
+                            <img src="assets/images/pricing-table-01.png" alt="">
+                          </div>
+                          <ul>
+                            <li>- Descuento especial para estudiantes universitarios.</li>
+                            <li>- Escucha música sin anuncios</li>
+                            <li>- Reproduce y descarga tus canciones en cualquier lugar, incluso sin conexión</li>
+                            <li>- Prepaga o suscríbete </li>
+                          </ul>
+                          <div class="border-button">
+                            <a href="#">PRUEBA 1 MES GRATIS</a>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <span class="price">$9.000</span>
+                          <h4>Premium para Estudiantes</h4>
+                          <div class="icon">
+                            <img src="assets/images/pricing-table-01.png" alt="">
+                          </div>
+                          <ul>
+                            <li>- Descuento especial para estudiantes universitarios.</li>
+                            <li>- Escucha música sin anuncios</li>
+                            <li>- Reproduce y descarga tus canciones en cualquier lugar, incluso sin conexión</li>
+                            <li>- Prepaga o suscríbete </li>
+                          </ul>
+                          <div class="border-button">
+                            <a href="#">PRUEBA 1 MES GRATIS</a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="assets/images/Metrics-pana.png" alt="">
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>     
+  </div>
 
 
-        <!-- Scripts -->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/owl-carousel.js"></script>
-        <script src="assets/js/animation.js"></script>
-        <script src="assets/js/imagesloaded.js"></script>
-        <script src="assets/js/popup.js"></script>
-        <script src="assets/js/custom.js"></script>
-        
+  <!-- Scripts -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
 
 
 </body>
