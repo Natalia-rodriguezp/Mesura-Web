@@ -1,5 +1,5 @@
 
-console.log("Holas nasmon")
+
 
 
 function addData(chart, label, data) {

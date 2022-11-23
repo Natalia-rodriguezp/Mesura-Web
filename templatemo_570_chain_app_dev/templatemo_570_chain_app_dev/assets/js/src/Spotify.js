@@ -1,6 +1,10 @@
+console.log("Holas nasmon")
+
+
 const APIController = (function () {
-    const clientId = '';
-    const clientSecret = '';
+    
+    const clientId = '51dc92d09b7e436ebfab395288839ddb';
+    const clientSecret = 'b8a2f23e9cae450093d9b960f71ee0f9';
 
     //Provate
     const _getToken = async () => {
@@ -34,3 +38,4 @@ const APIController = (function () {
 
 
 }());
+

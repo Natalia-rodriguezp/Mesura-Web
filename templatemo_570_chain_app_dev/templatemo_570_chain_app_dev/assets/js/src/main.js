@@ -9,6 +9,9 @@ import './signInForm.js';
 import './googleLogin.js';
 import './FacebookLogin.js';
 import './logout.js';
+import './Spotify.js';
+
+
 
 
 onAuthStateChanged(auth, async (user) => {
