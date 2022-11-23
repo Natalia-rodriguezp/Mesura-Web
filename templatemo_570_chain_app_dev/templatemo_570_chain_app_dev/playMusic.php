@@ -34,6 +34,7 @@ include("./assets/js/src/db.php");
 
   <script src="./assets/js/src/main.js" type="module"></script>
 
+
 </head>
 
 <body>
@@ -189,25 +190,25 @@ include("./assets/js/src/db.php");
                       <div class="pricing-item-regular row">
                         <div class="col-lg-6">
                           <div class="icon">
-                            <img src="assets/images/Capital-Cities-Safe-and-Sound.jpg" alt="">
+                            <img src="assets/images/Capital-Cities-Safe-and-Sound.jpg" alt="" id="imageMusic">
                           </div>
                         </div>
                         <div class="col-lg-6">
-                          <h4>Capital Cities - Safe And Sound</h4>
+                          <h3 id="titleMusic">Capital Cities - Safe And Sound</h3>
                           <ul>
-                            <li>- Consejos bonitos.</li>
-                            <li>- Palabras bonitas</li>
-                            <li>- Cositas para calmar a los usuarios</li>
-                            <li>- Aqui ocurre la magia </li>
+                            <li id="f1">- Consejos bonitos.</li>
+                            <li id="f2">- Palabras bonitas</li>
+                            <li id="f3">- Cositas para calmar a los usuarios</li>
+                            <li id="f4">- Aqui ocurre la magia </li>
                           </ul>
                           <div class="border-button">
-                            <a href="#">Me gusta</a>
+                            <a href="#" id="like">Me gusta</a>
                           </div>
                           <div class="border-button">
-                            <a href="#">No me gusta</a>
+                            <a href="#" id="unlike">No me gusta</a>
                           </div>
                         </div>
-                        <audio controls autoplay style=" padding-top: 30px; z-index: 1; " >
+                        <audio controls autoplay style=" padding-top: 40px; z-index: 1; " >
                         <source src="basic.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                       </audio>
@@ -233,6 +234,8 @@ include("./assets/js/src/db.php");
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="./assets/js/src/playMusic.js"></script>
+  
 
 
 

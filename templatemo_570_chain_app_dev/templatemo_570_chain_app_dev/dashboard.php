@@ -70,6 +70,7 @@ include("./assets/js/src/db.php");
               <li class="scroll-to-section"><a href="./index.html" class="active">Inicio</a></li>
               <li class="scroll-to-section"><a href="#services">Gráficas</a></li>
               <li class="scroll-to-section"><a href="#about">Tablas de datos</a></li>
+              <li class="scroll-to-section" id="logged-out"><a href="./playMusic.php" class="active">Reproductor</a></li>
 
 
               <li class="dukenuke"><div class="gradient-button" id="logged-out"><a href="#modal"id="logout">Cerrar sesión <i class="fa fa-sign-out-alt"></i> </a></div></li> 
