@@ -1,4 +1,4 @@
-
+import { showMessage } from "./showMessage.js"; // show message
 
 const musicTitles = [
     "Pharrell Williams  Happy",
@@ -35,7 +35,7 @@ const musicTitles = [
     "Little Jesus  La Magia",
     "Little Jesus  TQM Ft Ximena Sariñana  Elsa y Elmar",
     "Caloncho  Palmar ft Mon Laferte",
-    "Caloncho  Brillo Mío "
+    "Caloncho  Brillo Mio "
 ];
 
 const cites = [
@@ -59,17 +59,30 @@ const cites = [
 console.log(musicTitles[Math.floor(Math.random() * musicTitles.length)])
 
 const likebutton=document.getElementById('like');
+const unlikebutton=document.getElementById('unlike');
 const titleText=document.getElementById('titleMusic');
 
-likebutton.addEventListener("click", myFunction);
+likebutton.addEventListener("click", myFunctiona);
+unlikebutton.addEventListener("click", myFunction);
+
+function myFunctiona() {
+    showMessage("Se ha guardado tus gustos", "linear-gradient(to right, #00b09b, #96c93d)");
+}
 
 function myFunction() {
-    document.getElementById('titleMusic').textContent  = musicTitles[Math.floor(Math.random() * musicTitles.length)]
+
+    const song = musicTitles[Math.floor(Math.random() * musicTitles.length)]
+
+    document.getElementById('titleMusic').textContent  = song
 
 
     document.getElementById('f1').textContent  = cites[Math.floor(Math.random() * cites.length)]
     document.getElementById('f2').textContent  = cites[Math.floor(Math.random() * cites.length)]
     document.getElementById('f3').textContent  = cites[Math.floor(Math.random() * cites.length)]
     document.getElementById('f4').textContent  = cites[Math.floor(Math.random() * cites.length)]
+
+    document.getElementById("imageMusic").src="assets/images/"+song+".jpg";
+    document.getElementById("sourMusic").src="assets/images/"+song+".mp3";
+
     console.log("Funciona bto");
 }

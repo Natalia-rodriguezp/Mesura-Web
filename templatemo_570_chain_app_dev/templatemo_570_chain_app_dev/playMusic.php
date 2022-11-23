@@ -208,7 +208,7 @@ include("./assets/js/src/db.php");
                             <a href="#" id="unlike">No me gusta</a>
                           </div>
                         </div>
-                        <audio controls autoplay style=" padding-top: 40px; z-index: 1; " >
+                        <audio id="sourMusic" controls autoplay style=" padding-top: 40px; z-index: 1; " >
                         <source src="basic.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                       </audio>
@@ -234,7 +234,7 @@ include("./assets/js/src/db.php");
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
-  <script src="./assets/js/src/playMusic.js"></script>
+  <script src="./assets/js/src/playMusic.js" type="module"></script>
   
 
 
