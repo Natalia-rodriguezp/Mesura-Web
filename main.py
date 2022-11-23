@@ -12,7 +12,7 @@ class DataBase:
     def __init__(self):
         self.connection = pymysql.connect(host='195.179.238.103',
                                           user='u978607264_cokefish',
-                                          password='7B7vCu*UzgWhDBY',
+                                          password='Rody2601',
                                           db='u978607264_bd')
         self.cursor = self.connection.cursor()
 
@@ -39,7 +39,8 @@ while True:
 
     line = ser.readline()  # read a byte
     if line:
-        string = line.decode()  # convert the byte string to a unicode string
-        num = int(string)  # convert the unicode string to an int
-        print(num)
-        database.insert_data(num, 0)
+        string = line.decode().split(' ')  # convert the byte string to a unicode string
+        num1 = int(string[0])  # convert the unicode string to an int
+        num2 = int(string[1])  # convert the unicode string to an int
+        print(string)
+        database.insert_data(num1, num2)
